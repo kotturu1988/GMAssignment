@@ -9,7 +9,7 @@
 import Foundation
 
 struct Networking {
-    func callNetwork<T:Codable>(endpoint: GitHubAPI,completion: ((_ response: T) -> Void)?){
+    func callNetwork<T:Codable>(endpoint: GitHubAPI,type:T.Type,completion: ((_ response: T) -> Void)?){
         
         let urlString = endpoint.baseURL.appendingPathComponent(endpoint.path).absoluteString
         

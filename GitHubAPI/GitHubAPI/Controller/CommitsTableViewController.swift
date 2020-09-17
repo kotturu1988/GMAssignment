@@ -10,15 +10,18 @@ import UIKit
 
 class CommitsTableViewController: UITableViewController {
 
-    private var commits : Commits?
+    private let viewModel = CommitsTableViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let network = Networking()
-        network.callNetwork(endpoint: GitHubAPI.repositories){[weak self] (response) in
+        viewModel.getCommits(){[weak self] in
             
-            self?.commits = response
+            DispatchQueue.main.async {
+                self?.tableView.reloadData()
+            }            
         }
+       
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

@@ -23,6 +23,7 @@
 		75266CEF251405C600FFA717 /* Commits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75266CEE251405C600FFA717 /* Commits.swift */; };
 		7570F222251412320060C746 /* Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7570F221251412320060C746 /* Commit.swift */; };
 		7570F2242514124D0060C746 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7570F2232514124D0060C746 /* Response.swift */; };
+		7570F226251416C90060C746 /* CommitsTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7570F225251416C90060C746 /* CommitsTableViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		75266CEE251405C600FFA717 /* Commits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commits.swift; sourceTree = "<group>"; };
 		7570F221251412320060C746 /* Commit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commit.swift; sourceTree = "<group>"; };
 		7570F2232514124D0060C746 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		7570F225251416C90060C746 /* CommitsTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitsTableViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 		75266CE22513B9B400FFA717 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				7570F225251416C90060C746 /* CommitsTableViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				75266CED2513FFBC00FFA717 /* Networking.swift in Sources */,
 				75266CBB2513AE6600FFA717 /* AppDelegate.swift in Sources */,
 				75266CEF251405C600FFA717 /* Commits.swift in Sources */,
+				7570F226251416C90060C746 /* CommitsTableViewModel.swift in Sources */,
 				75266CBD2513AE6600FFA717 /* SceneDelegate.swift in Sources */,
 				75266CC52513AE6600FFA717 /* GitHubAPI.xcdatamodeld in Sources */,
 				75266CE92513FE2A00FFA717 /* EndPointType.swift in Sources */,
