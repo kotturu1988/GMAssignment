@@ -81,6 +81,11 @@
 		75266CB92513AE6600FFA717 /* GitHubAPI */ = {
 			isa = PBXGroup;
 			children = (
+				75266CE32513B9BC00FFA717 /* Controller */,
+				75266CE02513B9A200FFA717 /* Model */,
+				75266CE12513B9AC00FFA717 /* View */,
+				75266CE22513B9B400FFA717 /* ViewModel */,
+				75266CDF2513B99300FFA717 /* Networking */,
 				75266CBA2513AE6600FFA717 /* AppDelegate.swift */,
 				75266CBC2513AE6600FFA717 /* SceneDelegate.swift */,
 				75266CBE2513AE6600FFA717 /* ViewController.swift */,
@@ -100,6 +105,41 @@
 				75266CD62513AE6700FFA717 /* Info.plist */,
 			);
 			path = GitHubAPITests;
+			sourceTree = "<group>";
+		};
+		75266CDF2513B99300FFA717 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		75266CE02513B9A200FFA717 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		75266CE12513B9AC00FFA717 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		75266CE22513B9B400FFA717 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		75266CE32513B9BC00FFA717 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
