@@ -17,6 +17,10 @@
 		75266CD52513AE6700FFA717 /* GitHubAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75266CD42513AE6700FFA717 /* GitHubAPITests.swift */; };
 		75266CE52513F14800FFA717 /* CommitsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75266CE42513F14800FFA717 /* CommitsTableViewController.swift */; };
 		75266CE72513F1D700FFA717 /* CommitsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75266CE62513F1D700FFA717 /* CommitsTableViewCell.swift */; };
+		75266CE92513FE2A00FFA717 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75266CE82513FE2A00FFA717 /* EndPointType.swift */; };
+		75266CEB2513FEC800FFA717 /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75266CEA2513FEC800FFA717 /* GitHubAPI.swift */; };
+		75266CED2513FFBC00FFA717 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75266CEC2513FFBC00FFA717 /* Networking.swift */; };
+		75266CEF251405C600FFA717 /* Commits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75266CEE251405C600FFA717 /* Commits.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		75266CD62513AE6700FFA717 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75266CE42513F14800FFA717 /* CommitsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitsTableViewController.swift; sourceTree = "<group>"; };
 		75266CE62513F1D700FFA717 /* CommitsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitsTableViewCell.swift; sourceTree = "<group>"; };
+		75266CE82513FE2A00FFA717 /* EndPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		75266CEA2513FEC800FFA717 /* GitHubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
+		75266CEC2513FFBC00FFA717 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		75266CEE251405C600FFA717 /* Commits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commits.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +122,9 @@
 		75266CDF2513B99300FFA717 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				75266CE82513FE2A00FFA717 /* EndPointType.swift */,
+				75266CEA2513FEC800FFA717 /* GitHubAPI.swift */,
+				75266CEC2513FFBC00FFA717 /* Networking.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -121,6 +132,7 @@
 		75266CE02513B9A200FFA717 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				75266CEE251405C600FFA717 /* Commits.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -252,9 +264,13 @@
 				75266CE72513F1D700FFA717 /* CommitsTableViewCell.swift in Sources */,
 				75266CE52513F14800FFA717 /* CommitsTableViewController.swift in Sources */,
 				75266CBF2513AE6600FFA717 /* ViewController.swift in Sources */,
+				75266CED2513FFBC00FFA717 /* Networking.swift in Sources */,
 				75266CBB2513AE6600FFA717 /* AppDelegate.swift in Sources */,
+				75266CEF251405C600FFA717 /* Commits.swift in Sources */,
 				75266CBD2513AE6600FFA717 /* SceneDelegate.swift in Sources */,
 				75266CC52513AE6600FFA717 /* GitHubAPI.xcdatamodeld in Sources */,
+				75266CE92513FE2A00FFA717 /* EndPointType.swift in Sources */,
+				75266CEB2513FEC800FFA717 /* GitHubAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
