@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  Commit.swift
 //  GitHubAPI
 //
 //  Created by DTOMac13 on 9/17/20.
@@ -7,6 +7,9 @@
 //
 
 import Foundation
-struct Commits : Codable {
-    let commits : [Commit]
+
+struct Commit : Codable{
+    let sha : String
+    let message : String
+    let committerName : String
 }

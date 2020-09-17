@@ -21,6 +21,8 @@
 		75266CEB2513FEC800FFA717 /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75266CEA2513FEC800FFA717 /* GitHubAPI.swift */; };
 		75266CED2513FFBC00FFA717 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75266CEC2513FFBC00FFA717 /* Networking.swift */; };
 		75266CEF251405C600FFA717 /* Commits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75266CEE251405C600FFA717 /* Commits.swift */; };
+		7570F222251412320060C746 /* Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7570F221251412320060C746 /* Commit.swift */; };
+		7570F2242514124D0060C746 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7570F2232514124D0060C746 /* Response.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		75266CEA2513FEC800FFA717 /* GitHubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
 		75266CEC2513FFBC00FFA717 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		75266CEE251405C600FFA717 /* Commits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commits.swift; sourceTree = "<group>"; };
+		7570F221251412320060C746 /* Commit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commit.swift; sourceTree = "<group>"; };
+		7570F2232514124D0060C746 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +137,8 @@
 			isa = PBXGroup;
 			children = (
 				75266CEE251405C600FFA717 /* Commits.swift */,
+				7570F221251412320060C746 /* Commit.swift */,
+				7570F2232514124D0060C746 /* Response.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -263,7 +269,9 @@
 			files = (
 				75266CE72513F1D700FFA717 /* CommitsTableViewCell.swift in Sources */,
 				75266CE52513F14800FFA717 /* CommitsTableViewController.swift in Sources */,
+				7570F222251412320060C746 /* Commit.swift in Sources */,
 				75266CBF2513AE6600FFA717 /* ViewController.swift in Sources */,
+				7570F2242514124D0060C746 /* Response.swift in Sources */,
 				75266CED2513FFBC00FFA717 /* Networking.swift in Sources */,
 				75266CBB2513AE6600FFA717 /* AppDelegate.swift in Sources */,
 				75266CEF251405C600FFA717 /* Commits.swift in Sources */,
