@@ -43,7 +43,7 @@ class CommitsTableViewController: UITableViewController {
         }
         
         let cellViewModel = viewModel.cellViewModel(index: indexPath.row)
-        
+        cell.viewModel = cellViewModel
         
         return cell
     }

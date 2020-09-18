@@ -17,15 +17,15 @@ class CommitsTableViewCell: UITableViewCell {
     @IBOutlet weak var commitHashLabel: UILabel!
     @IBOutlet weak var commitMsgLabel: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    public var viewModel : CommitsTableViewCellModel?{
+        didSet{
+            guard let viewModel = viewModel else {
+                return
+            }
+            authorNameLabel.text = viewModel.authorName
+            commitHashLabel.text = viewModel.sha
+            commitMsgLabel.text = viewModel.commitMessage
+        }
     }
 
 }
