@@ -66,16 +66,28 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qEd-o3-QgG">
+                                                    <rect key="frame" x="0.0" y="115" width="288" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="Vzq-Y5-N1n"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="sdR-fq-76Q" firstAttribute="leading" secondItem="9VU-51-nEA" secondAttribute="leading" id="7iw-eG-Be4"/>
+                                                <constraint firstItem="qEd-o3-QgG" firstAttribute="top" secondItem="rTa-8Q-5XA" secondAttribute="bottom" constant="5" id="JwA-52-44I"/>
                                                 <constraint firstItem="rTa-8Q-5XA" firstAttribute="leading" secondItem="9VU-51-nEA" secondAttribute="leading" id="bWa-Ck-Pcc"/>
                                                 <constraint firstItem="rTa-8Q-5XA" firstAttribute="top" secondItem="WVs-Hu-YPw" secondAttribute="bottom" constant="5" id="bfr-gf-tdk"/>
                                                 <constraint firstItem="WVs-Hu-YPw" firstAttribute="top" secondItem="sdR-fq-76Q" secondAttribute="bottom" constant="5" id="c8d-Mq-KWU"/>
                                                 <constraint firstAttribute="trailing" secondItem="rTa-8Q-5XA" secondAttribute="trailing" constant="8" id="iJ3-dD-eEq"/>
+                                                <constraint firstItem="qEd-o3-QgG" firstAttribute="leading" secondItem="9VU-51-nEA" secondAttribute="leading" id="jjB-54-ROo"/>
                                                 <constraint firstAttribute="trailing" secondItem="WVs-Hu-YPw" secondAttribute="trailing" constant="8" id="kbY-gx-cNd"/>
                                                 <constraint firstItem="sdR-fq-76Q" firstAttribute="top" secondItem="9VU-51-nEA" secondAttribute="top" constant="2" id="koM-mB-3vI"/>
+                                                <constraint firstAttribute="trailing" secondItem="qEd-o3-QgG" secondAttribute="trailing" constant="8" id="mPH-vE-T6A"/>
                                                 <constraint firstItem="WVs-Hu-YPw" firstAttribute="leading" secondItem="9VU-51-nEA" secondAttribute="leading" id="nOs-xd-QLv"/>
                                             </constraints>
                                         </view>
@@ -94,6 +106,7 @@
                                 <connections>
                                     <outlet property="authorNameLabel" destination="sdR-fq-76Q" id="Ql9-EA-btD"/>
                                     <outlet property="avatarImgView" destination="z2P-jF-A1h" id="eVJ-wL-bo5"/>
+                                    <outlet property="commitDate" destination="qEd-o3-QgG" id="ab2-sW-k7K"/>
                                     <outlet property="commitHashLabel" destination="WVs-Hu-YPw" id="Vwe-lS-ojq"/>
                                     <outlet property="commitMsgLabel" destination="rTa-8Q-5XA" id="oFh-le-Vmj"/>
                                 </connections>

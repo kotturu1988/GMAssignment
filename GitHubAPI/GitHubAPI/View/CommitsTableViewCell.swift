@@ -17,6 +17,7 @@ class CommitsTableViewCell: UITableViewCell {
     @IBOutlet weak var commitHashLabel: UILabel!
     @IBOutlet weak var commitMsgLabel: UILabel!
     
+    @IBOutlet weak var commitDate: UILabel!
     public var viewModel : CommitsTableViewCellModel?{
         didSet{
             guard let viewModel = viewModel else {
