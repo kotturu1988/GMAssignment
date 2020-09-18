@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class CommitsTableViewModel {
     private let networking = Networking()
@@ -31,4 +32,23 @@ class CommitsTableViewModel {
         return commits?.count ?? 0
     }
     
+    func setBackgroundColor(view:UIView) -> CAGradientLayer{
+        let gradientLayer : CAGradientLayer = CAGradientLayer()
+        gradientLayer.frame = view.bounds
+        
+        let topColor: CGColor = UIColor(red: 65/255, green: 152/255, blue: 194/255, alpha: 1).cgColor
+        
+        let middleColor: CGColor = UIColor(red: 111/255, green: 161/255, blue: 181/255, alpha: 1).cgColor
+        
+        let bottomColor: CGColor = UIColor(red: 151/255, green: 167/255, blue: 174/255, alpha: 1).cgColor
+        
+        gradientLayer.colors = [topColor, middleColor, bottomColor]
+        
+        gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.5)
+        
+        gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.5)
+        
+        return gradientLayer                
+    }
+        
 }

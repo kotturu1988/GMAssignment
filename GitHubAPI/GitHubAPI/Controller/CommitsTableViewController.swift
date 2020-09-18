@@ -14,7 +14,12 @@ class CommitsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        let gradientLayer = viewModel.setBackgroundColor(view: self.view)
+        let backgroundView = UIView(frame: tableView.bounds)
+        backgroundView.layer.insertSublayer(gradientLayer, at: 0)
+        tableView.backgroundView = backgroundView
+        
         viewModel.getCommits(){[weak self] in
             
             DispatchQueue.main.async {
@@ -23,6 +28,17 @@ class CommitsTableViewController: UITableViewController {
         }
     }
 
+    @IBAction func pullToRefresh(_ sender: UIRefreshControl) {
+        
+        viewModel.getCommits(){[weak self] in
+            
+            DispatchQueue.main.async {
+                sender.endRefreshing()
+
+                self?.tableView.reloadData()
+            }
+        }
+    }
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
