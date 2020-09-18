@@ -12,11 +12,11 @@
         <scene sceneID="1J2-1c-otO">
             <objects>
                 <tableViewController id="zVf-aZ-Nzb" customClass="CommitsTableViewController" customModule="GitHubAPI" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="r1A-fb-fcn">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="r1A-fb-fcn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <color key="sectionIndexBackgroundColor" systemColor="systemGreenColor"/>
+                        <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="commitCellID" rowHeight="160" id="V0r-uC-Kfo" customClass="CommitsTableViewCell" customModule="GitHubAPI" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="160"/>
@@ -53,7 +53,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="W2A-xR-zcj"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -62,7 +62,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="Tgc-7O-UmX"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -91,15 +91,25 @@
                                                 <constraint firstItem="WVs-Hu-YPw" firstAttribute="leading" secondItem="9VU-51-nEA" secondAttribute="leading" id="nOs-xd-QLv"/>
                                             </constraints>
                                         </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I4b-3O-iKp">
+                                            <rect key="frame" x="0.0" y="159" width="414" height="1"/>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="A0x-jO-gFX"/>
+                                            </constraints>
+                                        </view>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="bottomMargin" secondItem="9VU-51-nEA" secondAttribute="bottom" constant="2" id="7gN-Ed-caV"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="9VU-51-nEA" secondAttribute="trailing" constant="10" id="Bgo-nb-DoO"/>
                                         <constraint firstItem="9VU-51-nEA" firstAttribute="top" secondItem="2IX-gj-UeR" secondAttribute="topMargin" constant="2" id="CoN-vs-IPq"/>
+                                        <constraint firstAttribute="trailing" secondItem="I4b-3O-iKp" secondAttribute="trailing" id="N27-5x-Fht"/>
+                                        <constraint firstAttribute="bottom" secondItem="I4b-3O-iKp" secondAttribute="bottom" id="NeD-Zq-hFh"/>
                                         <constraint firstItem="oht-tz-Kzo" firstAttribute="leading" secondItem="2IX-gj-UeR" secondAttribute="leading" constant="8" id="QDz-vY-53d"/>
                                         <constraint firstItem="oht-tz-Kzo" firstAttribute="centerY" secondItem="2IX-gj-UeR" secondAttribute="centerY" id="U9f-HC-1jN"/>
                                         <constraint firstItem="9VU-51-nEA" firstAttribute="leading" secondItem="oht-tz-Kzo" secondAttribute="trailing" constant="20" id="ace-MR-ByQ"/>
+                                        <constraint firstItem="I4b-3O-iKp" firstAttribute="leading" secondItem="2IX-gj-UeR" secondAttribute="leading" id="yig-LP-NWg"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -159,9 +169,6 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

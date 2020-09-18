@@ -23,6 +23,7 @@ class CommitsTableViewCell: UITableViewCell {
             guard let viewModel = viewModel else {
                 return
             }
+            viewModel.resizeImage(imageView: avatarImgView)
             authorNameLabel.text = viewModel.authorName
             commitHashLabel.text =  "Commit: \(viewModel.sha)"
             commitMsgLabel.text = viewModel.commitMessage

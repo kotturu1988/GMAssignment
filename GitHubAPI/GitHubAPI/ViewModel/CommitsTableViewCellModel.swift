@@ -34,6 +34,13 @@ class CommitsTableViewCellModel{
         
         return UIImage(data: imageData) ?? UIImage()
     }
+    
+    func resizeImage(imageView: UIImageView){
+        imageView.layer.cornerRadius = (imageView.frame.size.width ) / 2
+        imageView.clipsToBounds = true
+        imageView.layer.borderWidth = 3.0
+        imageView.layer.borderColor = UIColor.white.cgColor
+    }
 }
 
 
