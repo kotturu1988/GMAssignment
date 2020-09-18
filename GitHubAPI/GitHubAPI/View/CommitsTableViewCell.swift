@@ -23,7 +23,7 @@ class CommitsTableViewCell: UITableViewCell {
                 return
             }
             authorNameLabel.text = viewModel.authorName
-            commitHashLabel.text = viewModel.sha
+            commitHashLabel.text =  "Commit: \(viewModel.sha)"
             commitMsgLabel.text = viewModel.commitMessage
         }
     }

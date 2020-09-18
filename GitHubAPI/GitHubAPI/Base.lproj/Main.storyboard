@@ -36,48 +36,61 @@
                                                 <constraint firstAttribute="width" constant="60" id="ulj-rF-A6f"/>
                                             </constraints>
                                         </view>
-                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Bjt-7v-P0t">
-                                            <rect key="frame" x="87" y="50" width="114" height="57"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9VU-51-nEA">
+                                            <rect key="frame" x="88" y="13" width="296" height="134"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBW-py-jEi">
-                                                    <rect key="frame" x="0.0" y="0.0" width="114" height="23"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="23" id="8vB-ZU-C3Z"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sdR-fq-76Q">
+                                                    <rect key="frame" x="0.0" y="2" width="40" height="18"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Commit Hash" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mad-V1-EKo">
-                                                    <rect key="frame" x="0.0" y="23" width="114" height="17"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="characterWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WVs-Hu-YPw">
+                                                    <rect key="frame" x="0.0" y="25" width="288" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="W2A-xR-zcj"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Commit Message" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyo-jC-bsp">
-                                                    <rect key="frame" x="0.0" y="40" width="114" height="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTa-8Q-5XA">
+                                                    <rect key="frame" x="0.0" y="70" width="288" height="40"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="17" id="r90-sK-ndF"/>
+                                                        <constraint firstAttribute="height" constant="40" id="Tgc-7O-UmX"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                        </stackView>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            <constraints>
+                                                <constraint firstItem="sdR-fq-76Q" firstAttribute="leading" secondItem="9VU-51-nEA" secondAttribute="leading" id="7iw-eG-Be4"/>
+                                                <constraint firstItem="rTa-8Q-5XA" firstAttribute="leading" secondItem="9VU-51-nEA" secondAttribute="leading" id="bWa-Ck-Pcc"/>
+                                                <constraint firstItem="rTa-8Q-5XA" firstAttribute="top" secondItem="WVs-Hu-YPw" secondAttribute="bottom" constant="5" id="bfr-gf-tdk"/>
+                                                <constraint firstItem="WVs-Hu-YPw" firstAttribute="top" secondItem="sdR-fq-76Q" secondAttribute="bottom" constant="5" id="c8d-Mq-KWU"/>
+                                                <constraint firstAttribute="trailing" secondItem="rTa-8Q-5XA" secondAttribute="trailing" constant="8" id="iJ3-dD-eEq"/>
+                                                <constraint firstAttribute="trailing" secondItem="WVs-Hu-YPw" secondAttribute="trailing" constant="8" id="kbY-gx-cNd"/>
+                                                <constraint firstItem="sdR-fq-76Q" firstAttribute="top" secondItem="9VU-51-nEA" secondAttribute="top" constant="2" id="koM-mB-3vI"/>
+                                                <constraint firstItem="WVs-Hu-YPw" firstAttribute="leading" secondItem="9VU-51-nEA" secondAttribute="leading" id="nOs-xd-QLv"/>
+                                            </constraints>
+                                        </view>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="Bjt-7v-P0t" firstAttribute="top" secondItem="oht-tz-Kzo" secondAttribute="top" id="Gm0-Yc-h3D"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="9VU-51-nEA" secondAttribute="bottom" constant="2" id="7gN-Ed-caV"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="9VU-51-nEA" secondAttribute="trailing" constant="10" id="Bgo-nb-DoO"/>
+                                        <constraint firstItem="9VU-51-nEA" firstAttribute="top" secondItem="2IX-gj-UeR" secondAttribute="topMargin" constant="2" id="CoN-vs-IPq"/>
                                         <constraint firstItem="oht-tz-Kzo" firstAttribute="leading" secondItem="2IX-gj-UeR" secondAttribute="leading" constant="8" id="QDz-vY-53d"/>
                                         <constraint firstItem="oht-tz-Kzo" firstAttribute="centerY" secondItem="2IX-gj-UeR" secondAttribute="centerY" id="U9f-HC-1jN"/>
-                                        <constraint firstItem="Bjt-7v-P0t" firstAttribute="leading" secondItem="oht-tz-Kzo" secondAttribute="trailing" constant="19" id="xQU-2H-0Y5"/>
+                                        <constraint firstItem="9VU-51-nEA" firstAttribute="leading" secondItem="oht-tz-Kzo" secondAttribute="trailing" constant="20" id="ace-MR-ByQ"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="authorNameLabel" destination="wBW-py-jEi" id="pRV-KU-Jzl"/>
+                                    <outlet property="authorNameLabel" destination="sdR-fq-76Q" id="Ql9-EA-btD"/>
                                     <outlet property="avatarImgView" destination="z2P-jF-A1h" id="eVJ-wL-bo5"/>
-                                    <outlet property="commitHashLabel" destination="mad-V1-EKo" id="mgK-gJ-SSc"/>
-                                    <outlet property="commitMsgLabel" destination="gyo-jC-bsp" id="x3G-r7-3by"/>
+                                    <outlet property="commitHashLabel" destination="WVs-Hu-YPw" id="Vwe-lS-ojq"/>
+                                    <outlet property="commitMsgLabel" destination="rTa-8Q-5XA" id="oFh-le-Vmj"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
