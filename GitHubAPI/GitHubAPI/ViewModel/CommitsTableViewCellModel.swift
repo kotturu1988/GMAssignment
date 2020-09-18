@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class CommitsTableViewCellModel{
     private let commit : Commit
@@ -26,6 +27,12 @@ class CommitsTableViewCellModel{
     }
     var  date : String{
         return commit.date
+    }
+    var avatar : UIImage{
+        guard let imageURL = URL(string: commit.avatar_url) else { return UIImage() }
+        let imageData = try! Data(contentsOf: imageURL)
+        
+        return UIImage(data: imageData) ?? UIImage()
     }
 }
 
