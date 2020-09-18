@@ -15,8 +15,29 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GitHub" translatesAutoresizingMaskIntoConstraints="NO" id="827-CN-bV9">
+                                <rect key="frame" x="132" y="257.5" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="RKd-AN-jWL"/>
+                                    <constraint firstAttribute="width" constant="150" id="xMY-EQ-pqT"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GitHub API" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZc-Hw-Mkj">
+                                <rect key="frame" x="117" y="427.5" width="180.5" height="41"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="34"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.45038938519999999" green="0.63119411469999998" blue="0.70567166810000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kZc-Hw-Mkj" firstAttribute="top" secondItem="827-CN-bV9" secondAttribute="bottom" constant="20" id="DCa-6R-fFO"/>
+                            <constraint firstItem="kZc-Hw-Mkj" firstAttribute="centerX" secondItem="827-CN-bV9" secondAttribute="centerX" id="GQp-u9-ZFp"/>
+                            <constraint firstItem="kZc-Hw-Mkj" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="lEf-Dq-Z1N"/>
+                            <constraint firstItem="827-CN-bV9" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="oW9-dI-esz"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +45,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="GitHub" width="150" height="150"/>
+    </resources>
 </document>
