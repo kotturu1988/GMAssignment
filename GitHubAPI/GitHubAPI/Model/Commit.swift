@@ -9,7 +9,35 @@
 import Foundation
 
 struct Commit : Codable{
+
+    enum RootKeys: String, CodingKey{
+        case sha, commit
+    }
+    enum CommitKeys : String, CodingKey{
+        case commitMessgae = "message", author = "author"
+    }
+    enum AuthorKeys : String, CodingKey{
+           case name = "name", date = "date"
+    }
+
     let sha : String
-    let message : String
-    let committerName : String
+    let commitMessage : String
+    let authorName : String
+    let date : String
+}
+
+extension Commit{
+    init(from decoder: Decoder) throws {
+
+        let container = try decoder.container(keyedBy: RootKeys.self)
+        sha = try container.decode(String.self, forKey: .sha)
+
+        let commitContainer = try container.nestedContainer(keyedBy: CommitKeys.self, forKey: .commit)
+        commitMessage = try commitContainer.decode(String.self, forKey: .commitMessgae)
+
+        let authorContainer = try commitContainer.nestedContainer(keyedBy: AuthorKeys.self, forKey: .author)
+        authorName = try authorContainer.decode(String.self, forKey: .name)
+        
+        date = try authorContainer.decode(String.self, forKey: .date)
+    }
 }

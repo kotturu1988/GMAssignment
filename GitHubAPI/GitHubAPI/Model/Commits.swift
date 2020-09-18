@@ -8,5 +8,5 @@
 
 import Foundation
 struct Commits : Codable {
-    let commits : [Commit]
+    var commits : [Commit]
 }

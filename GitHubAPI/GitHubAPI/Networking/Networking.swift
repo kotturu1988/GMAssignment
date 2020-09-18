@@ -23,6 +23,9 @@ struct Networking {
             }
             guard let data = data else {return}
             print(data)
+            let response = APIResponse(data: data)
+            guard let decodedData = response.decode(type)else {return}
+            completion?(decodedData)
             
         }
         task.resume()
