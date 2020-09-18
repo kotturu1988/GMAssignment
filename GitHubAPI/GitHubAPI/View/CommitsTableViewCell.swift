@@ -10,7 +10,8 @@ import UIKit
 
 class CommitsTableViewCell: UITableViewCell {
     
-    
+    public static let reuseIdentifier = "commitCellID"
+
     @IBOutlet weak var avatarImgView: UIImageView!
     @IBOutlet weak var authorNameLabel: UILabel!
     @IBOutlet weak var commitHashLabel: UILabel!
