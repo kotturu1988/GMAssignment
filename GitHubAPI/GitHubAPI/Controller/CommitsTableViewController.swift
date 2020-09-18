@@ -19,7 +19,7 @@ class CommitsTableViewController: UITableViewController {
         let backgroundView = UIView(frame: tableView.bounds)
         backgroundView.layer.insertSublayer(gradientLayer, at: 0)
         tableView.backgroundView = backgroundView
-        
+        tableView.allowsSelection = false
         viewModel.getCommits(){[weak self] in
             
             DispatchQueue.main.async {

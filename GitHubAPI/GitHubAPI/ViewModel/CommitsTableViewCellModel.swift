@@ -28,3 +28,6 @@ class CommitsTableViewCellModel{
         return commit.date
     }
 }
+
+
+

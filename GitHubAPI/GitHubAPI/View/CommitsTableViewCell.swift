@@ -26,6 +26,7 @@ class CommitsTableViewCell: UITableViewCell {
             authorNameLabel.text = viewModel.authorName
             commitHashLabel.text =  "Commit: \(viewModel.sha)"
             commitMsgLabel.text = viewModel.commitMessage
+            commitDate.text = viewModel.date
         }
     }
 
