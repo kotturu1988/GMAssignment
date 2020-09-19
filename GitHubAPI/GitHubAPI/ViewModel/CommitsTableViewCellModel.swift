@@ -26,7 +26,18 @@ class CommitsTableViewCellModel{
         return commit.authorName
     }
     var  date : String{
-        return commit.date
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss'Z'"
+        dateFormatter.timeZone = NSTimeZone(name: "UTC") as TimeZone?
+        
+        let convertedDate = dateFormatter.date(from: commit.date)
+        dateFormatter.dateFormat = "EEE, MMM d, yyyy - h:mm a"
+        dateFormatter.timeZone = NSTimeZone.local
+        
+        let timeStamp = dateFormatter.string(from:convertedDate!)
+        
+        return "\(timeStamp)"
     }
     var avatar : UIImage{
         guard let imageURL = URL(string: commit.avatar_url) else { return UIImage() }
