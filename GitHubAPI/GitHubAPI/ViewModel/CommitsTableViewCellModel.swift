@@ -40,12 +40,14 @@ class CommitsTableViewCellModel{
         return "\(timeStamp)"
     }
     var avatar : UIImage{
+        // Converting Image url to data
         guard let imageURL = URL(string: commit.avatar_url) else { return UIImage() }
         let imageData = try! Data(contentsOf: imageURL)
         
         return UIImage(data: imageData) ?? UIImage()
     }
     
+    // Circular image view
     func resizeImage(imageView: UIImageView){
         imageView.layer.cornerRadius = (imageView.frame.size.width ) / 2
         imageView.clipsToBounds = true

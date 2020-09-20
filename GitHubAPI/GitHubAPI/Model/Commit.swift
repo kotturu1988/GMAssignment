@@ -9,7 +9,7 @@
 import Foundation
 
 struct Commit : Codable{
-
+    
     enum RootKeys: String, CodingKey{
         case sha, commit, committer
     }
@@ -33,7 +33,7 @@ struct Commit : Codable{
 
 extension Commit{
     init(from decoder: Decoder) throws {
-
+        // Decoding the JSON and initializing model
         let container = try decoder.container(keyedBy: RootKeys.self)
         sha = try container.decode(String.self, forKey: .sha)
 

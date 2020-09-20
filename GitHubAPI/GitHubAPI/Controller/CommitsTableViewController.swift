@@ -15,11 +15,14 @@ class CommitsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Setting up Background color to tableview
         let gradientLayer = viewModel.setBackgroundColor(view: self.view)
         let backgroundView = UIView(frame: tableView.bounds)
         backgroundView.layer.insertSublayer(gradientLayer, at: 0)
         tableView.backgroundView = backgroundView
         tableView.allowsSelection = false
+        
+        // Calling API to retrieve recent commits
         viewModel.getCommits(){[weak self] in
             
             DispatchQueue.main.async {
@@ -28,17 +31,18 @@ class CommitsTableViewController: UITableViewController {
         }
     }
 
+    // Pull to refresh
     @IBAction func pullToRefresh(_ sender: UIRefreshControl) {
         
         viewModel.getCommits(){[weak self] in
             
             DispatchQueue.main.async {
                 sender.endRefreshing()
-
                 self?.tableView.reloadData()
             }
         }
     }
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -50,9 +54,9 @@ class CommitsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return viewModel.count
     }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: CommitsTableViewCell.reuseIdentifier, for: indexPath) as? CommitsTableViewCell else {
             return UITableViewCell()

@@ -13,6 +13,7 @@ class CommitsTableViewModel {
     private let networking = Networking()
     private var commits : [Commit]?
     
+    // Calling API using Networking instance
     public func getCommits(completion:(()->Void)?){
         
         networking.callNetwork(endpoint: GitHubAPI.repositories, type: [Commit].self){[weak self] response in
@@ -22,16 +23,19 @@ class CommitsTableViewModel {
         }
     }
     
+    //cell view model
     public func cellViewModel(index:Int) -> CommitsTableViewCellModel?{
         guard let commits = commits else {return nil}
         let commitsTableViewCellModel = CommitsTableViewCellModel(commit: commits[index])
         return commitsTableViewCellModel
     }
     
+    // Total count of commits
     public var count : Int{
         return commits?.count ?? 0
     }
     
+    // Custom gradient layer to setup background color
     func setBackgroundColor(view:UIView) -> CAGradientLayer{
         let gradientLayer : CAGradientLayer = CAGradientLayer()
         gradientLayer.frame = view.bounds

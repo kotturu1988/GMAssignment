@@ -16,6 +16,7 @@ struct APIResponse {
 }
 
 extension APIResponse {
+    // Decoding JSON
     public func decode<T:Codable>(_ type:T.Type)->T?{
         
         let jsonDecoder = JSONDecoder()

@@ -9,6 +9,8 @@
 import Foundation
 
 struct Networking {
+    
+    // Network call using URLSession
     func callNetwork<T:Codable>(endpoint: GitHubAPI,type:T.Type,completion: ((_ response: T) -> Void)?){
         
         let urlString = endpoint.baseURL.appendingPathComponent(endpoint.path).absoluteString

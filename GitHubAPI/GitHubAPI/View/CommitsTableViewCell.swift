@@ -11,13 +11,15 @@ import UIKit
 class CommitsTableViewCell: UITableViewCell {
     
     public static let reuseIdentifier = "commitCellID"
-
+    
+    // Table view cell UI Elements
     @IBOutlet weak var avatarImgView: UIImageView!
     @IBOutlet weak var authorNameLabel: UILabel!
     @IBOutlet weak var commitHashLabel: UILabel!
     @IBOutlet weak var commitMsgLabel: UILabel!
-    
     @IBOutlet weak var commitDate: UILabel!
+    
+    // Appending values to UI elements in Tableview Cell
     public var viewModel : CommitsTableViewCellModel?{
         didSet{
             guard let viewModel = viewModel else {

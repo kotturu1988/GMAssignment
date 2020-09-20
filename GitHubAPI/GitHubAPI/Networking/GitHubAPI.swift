@@ -12,6 +12,7 @@ enum GitHubAPI {
     case repositories
 }
 
+// Endpoint definition
 extension GitHubAPI : APIEndPointType{
     var baseURL: URL {
         return URL(string: "https://api.github.com")!
