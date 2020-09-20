@@ -64,6 +64,4 @@ class CommitsTableViewController: UITableViewController {
         return cell
     }
 
- 
-
 }

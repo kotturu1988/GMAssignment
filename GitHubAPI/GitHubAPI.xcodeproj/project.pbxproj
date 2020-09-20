@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		75266CBB2513AE6600FFA717 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75266CBA2513AE6600FFA717 /* AppDelegate.swift */; };
 		75266CBD2513AE6600FFA717 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75266CBC2513AE6600FFA717 /* SceneDelegate.swift */; };
-		75266CBF2513AE6600FFA717 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75266CBE2513AE6600FFA717 /* ViewController.swift */; };
 		75266CC22513AE6600FFA717 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75266CC02513AE6600FFA717 /* Main.storyboard */; };
 		75266CC52513AE6600FFA717 /* GitHubAPI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 75266CC32513AE6600FFA717 /* GitHubAPI.xcdatamodeld */; };
 		75266CC72513AE6700FFA717 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75266CC62513AE6700FFA717 /* Assets.xcassets */; };
@@ -20,7 +19,6 @@
 		75266CE92513FE2A00FFA717 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75266CE82513FE2A00FFA717 /* EndPointType.swift */; };
 		75266CEB2513FEC800FFA717 /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75266CEA2513FEC800FFA717 /* GitHubAPI.swift */; };
 		75266CED2513FFBC00FFA717 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75266CEC2513FFBC00FFA717 /* Networking.swift */; };
-		75266CEF251405C600FFA717 /* Commits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75266CEE251405C600FFA717 /* Commits.swift */; };
 		7570F222251412320060C746 /* Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7570F221251412320060C746 /* Commit.swift */; };
 		7570F2242514124D0060C746 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7570F2232514124D0060C746 /* Response.swift */; };
 		7570F226251416C90060C746 /* CommitsTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7570F225251416C90060C746 /* CommitsTableViewModel.swift */; };
@@ -41,7 +39,6 @@
 		75266CB72513AE6600FFA717 /* GitHubAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75266CBA2513AE6600FFA717 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75266CBC2513AE6600FFA717 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		75266CBE2513AE6600FFA717 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		75266CC12513AE6600FFA717 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		75266CC42513AE6600FFA717 /* GitHubAPI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GitHubAPI.xcdatamodel; sourceTree = "<group>"; };
 		75266CC62513AE6700FFA717 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -55,7 +52,6 @@
 		75266CE82513FE2A00FFA717 /* EndPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
 		75266CEA2513FEC800FFA717 /* GitHubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
 		75266CEC2513FFBC00FFA717 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
-		75266CEE251405C600FFA717 /* Commits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commits.swift; sourceTree = "<group>"; };
 		7570F221251412320060C746 /* Commit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commit.swift; sourceTree = "<group>"; };
 		7570F2232514124D0060C746 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		7570F225251416C90060C746 /* CommitsTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitsTableViewModel.swift; sourceTree = "<group>"; };
@@ -108,7 +104,6 @@
 				75266CDF2513B99300FFA717 /* Networking */,
 				75266CBA2513AE6600FFA717 /* AppDelegate.swift */,
 				75266CBC2513AE6600FFA717 /* SceneDelegate.swift */,
-				75266CBE2513AE6600FFA717 /* ViewController.swift */,
 				75266CC02513AE6600FFA717 /* Main.storyboard */,
 				75266CC62513AE6700FFA717 /* Assets.xcassets */,
 				75266CC82513AE6700FFA717 /* LaunchScreen.storyboard */,
@@ -140,7 +135,6 @@
 		75266CE02513B9A200FFA717 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				75266CEE251405C600FFA717 /* Commits.swift */,
 				7570F221251412320060C746 /* Commit.swift */,
 				7570F2232514124D0060C746 /* Response.swift */,
 			);
@@ -276,12 +270,10 @@
 				75266CE72513F1D700FFA717 /* CommitsTableViewCell.swift in Sources */,
 				75266CE52513F14800FFA717 /* CommitsTableViewController.swift in Sources */,
 				7570F222251412320060C746 /* Commit.swift in Sources */,
-				75266CBF2513AE6600FFA717 /* ViewController.swift in Sources */,
 				7570F2242514124D0060C746 /* Response.swift in Sources */,
 				75266CED2513FFBC00FFA717 /* Networking.swift in Sources */,
 				7570F22A2514FDE20060C746 /* CommitsTableViewCellModel.swift in Sources */,
 				75266CBB2513AE6600FFA717 /* AppDelegate.swift in Sources */,
-				75266CEF251405C600FFA717 /* Commits.swift in Sources */,
 				7570F226251416C90060C746 /* CommitsTableViewModel.swift in Sources */,
 				75266CBD2513AE6600FFA717 /* SceneDelegate.swift in Sources */,
 				75266CC52513AE6600FFA717 /* GitHubAPI.xcdatamodeld in Sources */,
